@@ -20,5 +20,6 @@ def regularpolygon(sides):
         sam.forward(50)
         sam.right(angle)
         print("The triangle was printed")
+        print("This will be printed every time this is run")
 regularpolygon(3)
 regularpolygon(5)
