@@ -19,5 +19,6 @@ def regularpolygon(sides):
     for i in range(sides):
         sam.forward(50)
         sam.right(angle)
+        print("The triangle was printed")
 regularpolygon(3)
 regularpolygon(5)
