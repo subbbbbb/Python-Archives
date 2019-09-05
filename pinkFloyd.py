@@ -9,7 +9,8 @@ from random import randint
 # Declares the turtle screen and gives the window a name
 myScreen = turtle.Screen()
 myScreen.title("Dark Side of the Moon")
-myScreen.bgcolor("black")
+colormode(255)
+myScreen.bgcolor(50,60,80)
 
 # Creates a new pen object
 sub = turtle.Turtle()
