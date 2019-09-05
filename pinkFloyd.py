@@ -43,16 +43,18 @@ sub.pendown()
 x = 1
 sub.goto(25,50) # Does the little line to the triangle
 
-# Does the RGB star that is supposed to replicate a rainbow
-while x < 100:
-    colormode(255) # Allows you to use the 255 RGB colors?
+# Does the RGB line that is supposed to replicate a rainbow
+while x < 600: # This makes it so that 100 isoceles triangles will be printed
+    cool = turtle.Turtle()
+    x+=1 # Every time it iterates through the while loop the triangles get bigger
+    colormode(255) # Allows you to use the 255 RGB colors ***I think***
+    cool.pensize(1)
+    cool.speed("fastest")
     red = randint(0,255)
-    green = randint(0,255)
+    green = randint(0,255) # I would've used the randints above but that way the colors won't change
     blue = randint(0,255)
-    pencolor(red,green,blue) # this will make it some random color
-    speed("fastest") 
-    pensize(1)
-    fd(50 + x) # it is 50 + x because the star gets bigger as x+=1
-    rt(100)
-    x+=1
+    cool.pencolor(red,green,blue) # this will make it some random color
+    cool.forward(40 + x) # it is 50 + x because the star gets bigger as x+=1
+    cool.right(200)
+    
 sub.done()
