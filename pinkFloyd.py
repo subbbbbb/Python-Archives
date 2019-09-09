@@ -45,7 +45,7 @@ x = 1
 sub.goto(25,50) # Does the little line to the triangle
 
 # Does the RGB line that is supposed to replicate a rainbow
-while x < 600: # This makes it so that 600 isoceles triangles will be printed
+while x < 500: # This makes it so that 600 isoceles triangles will be printed
     cool = turtle.Turtle()
     x+=1 # Every time it iterates through the while loop the triangles get bigger
     colormode(255) # Allows you to use the 255 RGB colors ***I think***
@@ -58,4 +58,5 @@ while x < 600: # This makes it so that 600 isoceles triangles will be printed
     cool.forward(40 + x) # it is 50 + x because the rainbow gets bigger as x+=1
     cool.right(200)
     
+print("Finished.")    
 sub.done()
