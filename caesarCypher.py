@@ -3,7 +3,7 @@ def getMode():
         mode = input("Do you wish to to encrypt or decrypt?").lower()
         if mode == "encrypt" or mode == "decrypt":
             return mode
-       else:
+        else:
            mode = input("Do you wish to to encrypt or decrypt?").lower()
 # print(getMode())
 
