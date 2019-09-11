@@ -1,0 +1,12 @@
+Decimal to Binary:
+The divide by 2 trick, go down the list.
+Never forget to always write out the binary number from last to first
+
+Binary to Decimal:
+01010111
+From left to write, 2,4,8,16,32,64...
+Whichever ones have it, add the number, then just add them all up at the end
+
+Decimal to Hexadecimal:
+https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/decimal-to-hexadecimal
+
