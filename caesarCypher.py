@@ -1,3 +1,8 @@
+# The premise of the code is that you want to encode/decode the message 
+# 1 letter to the right. 
+# For example
+
+
 """Define a function to ask user if they want to encrypt or decrypt and return the answer"""
 def getMode(): # empty paramter list
     mode = input("Do you wish to encrypt or decrypt?").lower()
