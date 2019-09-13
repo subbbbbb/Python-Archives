@@ -1,8 +1,11 @@
 import turtle
 screen = turtle.Screen()
 screen.setup(500,500)
+screen.tracer(0)
 don = turtle.Turtle()
 don.speed(0)
+don.width(3)
+don.hideturtle()
 def draw_square():
     for side in range(4):
         don.forward(100)
@@ -13,4 +16,5 @@ don.pendown()
 while True:
     don.clear()
     draw_square()
-    don.forward(10)
+    screen.update()
+    don.forward(0.02)
