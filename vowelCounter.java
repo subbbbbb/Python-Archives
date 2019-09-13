@@ -18,3 +18,4 @@ public class vowelCounter {
     else System.out.println("Your word has no vowels in it.");
   }
 }
+// comment check
