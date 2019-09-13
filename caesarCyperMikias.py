@@ -48,3 +48,5 @@ def getTranslatedMessage(mode, message, key): #parameter list
     return translated 
 print(getTranslatedMessage("encrypt", "Hello", 1))
 print(getTranslatedMessage("decrypt", "Ifmmp", 1))
+print(getTranslatedMessage("encrypt", "Sub", 2))
+print(getTranslatedMessage("decrypt", "Uwd", 2)) # the number says how many letters to move to the right
