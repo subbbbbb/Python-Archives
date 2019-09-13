@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - vowelCounter",
+            "request": "launch",
+            "mainClass": "vowelCounter",
+            "projectName": "APCSP-Code_a11b9345"
+        }
+    ]
+}
