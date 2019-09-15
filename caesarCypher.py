@@ -22,11 +22,6 @@ def getKey():
     except:
         key = int(input("Enter key between 1-25"))
     
-
-
-
-
-    
 def getKey ():
     key = int(input("Enter a number betwen -25 and 25")) #asking for a key and convert to int
     while True:
