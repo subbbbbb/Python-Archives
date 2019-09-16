@@ -17,7 +17,7 @@ print(getMessage())
 
 def getKey():
     try:
-        key = int(input("enter key between 1-25"))
+        key = int(input("enter key between 1-25")) smooth smooth this is
         return key
     except:
         key = int(input("Enter key between 1-25"))
