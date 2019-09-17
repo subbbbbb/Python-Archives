@@ -1,7 +1,7 @@
-'''
-def getMode(): #defining mode
+
+def getMode(): # basically a getter method for getting the type you want (encrypt or decrypt)
     
-    mode =  input("you wanna encrypt or decrypt dummy?").lower()#convert single letters to lowercase
+    mode =  input("Would you like to encrypt or decrypt?").lower()#convert single letters to lowercase
     while True: #loop
         if mode == "encrypt" or mode == "decrypt": #saying what the user will do 
 
@@ -17,7 +17,7 @@ print(getMessage())
 
 def getKey():
     try:
-        key = int(input("enter key between 1-25")) smooth smooth this is
+        key = int(input("enter key between 1-25"))
         return key
     except:
         key = int(input("Enter key between 1-25"))
@@ -30,7 +30,7 @@ def getKey ():
     else:
         key = int(input("I need a number 1-25"))
 print(getKey())
-'''
+
 
 def getTranslatedMessage(mode, message, key): #parameter list
     if mode[0] == 'd': #if first letter in mode variable is d grab part of string
