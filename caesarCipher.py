@@ -1,8 +1,8 @@
 
 def getMode(): # basically a getter method for getting the type you want (encrypt or decrypt)
     
-    mode =  input("Would you like to encrypt or decrypt?").lower()#convert single letters to lowercase
-    while True: #loop
+    mode =  input("Would you like to encrypt or decrypt?").lower() #convert single letters to lowercase, prevents problems with ASCII
+    while True: # always true, as long as the input is
         if mode == "encrypt" or mode == "decrypt": #saying what the user will do 
 
             return mode #returning mode
@@ -23,7 +23,7 @@ def getKey():
         key = int(input("Enter key between 1-25"))
     
 def getKey ():
-    key = int(input("Enter a number betwen -25 and 25")) #asking for a key and convert to int
+    key = int(input("Enter a number betwen -25 and 25")) # asking for a key and convert to int
     while True:
         if key >=-25 and key<=25:
             return key
