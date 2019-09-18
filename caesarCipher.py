@@ -1,27 +1,33 @@
-'''
+ 
+# getMode() is a getter method that either prints out decrypt/encrypt, or tells you to do it over again if invalid input
 def getMode(): #defining mode
-    
-    mode =  input("you wanna encrypt or decrypt dummy?").lower()#convert single letters to lowercase
+    mode =  input("do you want to encrypt or decrypt?").lower()#convert single letters to lowercase
     while True: #loop
         if mode == "encrypt" or mode == "decrypt": #saying what the user will do 
 
             return mode #returning mode
         else:
-            mode = input("Spell it right and stop wasting my time").lower() #spell it right
-            
-print(getMode())#print it
+            mode = input("Spell it right and stop wasting my time").lower() #spell it right       
+print(getMode()) # print it
+ 
 
-def getMessage():
+ 
+# getMessage() is a getter method that returns what method you want (same as getMode)
+def getMessage(): 
     return input("Encrypt or Decrypt")
 print(getMessage())
+ 
 
+# Ask Mr. Sarnowski about this method, since at this point it does not seem to work
 def getKey():
     try:
-        key = int(input("enter key between 1-25")) smooth smooth this is
+        key = int(input("enter key between 1-25"))
         return key
     except:
         key = int(input("Enter key between 1-25"))
-    
+ 
+
+# another getter method that simply gives you the key that you enter, as long as it is between 1 and 25
 def getKey ():
     key = int(input("Enter a number betwen -25 and 25")) #asking for a key and convert to int
     while True:
@@ -30,7 +36,8 @@ def getKey ():
     else:
         key = int(input("I need a number 1-25"))
 print(getKey())
-'''
+
+
 
 def getTranslatedMessage(mode, message, key): #parameter list
     if mode[0] == 'd': #if first letter in mode variable is d grab part of string
@@ -44,4 +51,3 @@ def getTranslatedMessage(mode, message, key): #parameter list
 print(getTranslatedMessage("encrypt", "Hello", 1))
 print(getTranslatedMessage("decrypt", "Ifmmp", 1))
 print(getTranslatedMessage("encrypt", "Sub", 2))
-print(getTranslatedMessage("decrypt", "Uwd", 2)) # the number says how many letters to move to the right
