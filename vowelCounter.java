@@ -16,6 +16,6 @@ public class vowelCounter {
     if (vowCount > 0)
       System.out.println("Your word has a total of " + vowCount + " vowels.");
     else
-      System.out.println("Your word has no vowels in it.");
+      System.out.println("Your word has no vowels in it what");
   }
 }
