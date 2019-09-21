@@ -41,7 +41,7 @@ def getTranslatedMessage(mode, message, key):  # parameter list
 
 print(getTranslatedMessage("encrypt", "Hello", 1))
 print(getTranslatedMessage("decrypt", "Ifmmp", 1))
-print(getTranslatedMessage("encrypt", "Sub", 2)
+print(getTranslatedMessage("encrypt", "Sub", 2))
 
 # getMode() is a getter method that either prints out decrypt/encrypt, or tells you to do it over again if invalid input
 # defines the specific mode that you want
@@ -60,6 +60,3 @@ print(getTranslatedMessage("encrypt", "Sub", 2)
 # parameter list
 # if first letter in mode variable is d grab part of string
 # switch key for decryption
-
-
-
