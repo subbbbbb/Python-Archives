@@ -1,10 +1,8 @@
 import turtle
-from turtle import *
 
 # Sets the basic turtle window
 myScreen = turtle.Screen()
 myScreen.title("House")
-colormode(255)
 myScreen.bgcolor("cyan")
 
 # Sets the pen
@@ -71,3 +69,10 @@ sub.begin_fill()
 sub.fillcolor("yellow")
 sub.circle(30)
 sub.end_fill()
+
+# First off, import the turtle, and from turtle get all the extra stuff
+# Start off every turtle class with a Screen, a title, and a background color
+# then make a pen, give it a pen color, a color, a size, and a speed
+# remember to use penups and pendowns
+# the graph is like a coordinate graph
+# for fills, put the begin fill before you make the shape, then end fill after
