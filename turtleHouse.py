@@ -71,4 +71,3 @@ sub.begin_fill()
 sub.fillcolor("yellow")
 sub.circle(30)
 sub.end_fill()
-
