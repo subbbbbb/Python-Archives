@@ -4,8 +4,8 @@ def getTranslatedMessage(mode, message, key):  # translator method
     # key is the number of spaces moved to the left or right
     # the ord() function takes a single character and gives the ascii value of it
 
-    
-    if mode[0] == "d": # all this does is check if it is encrypt or decrypt, mode.substring(0,1)
+    # all this does is check if it is encrypt or decrypt, mode.substring(0,1)
+    if mode[0] == "d":
         key = -key  # this switches the order and makes it so you will subtract the ascii values instead of adding them
     translated = ""  # the final word that will be printed out
     for letter in message:  # letter is the individual letter in each letter of message
@@ -21,4 +21,5 @@ def getTranslatedMessage(mode, message, key):  # translator method
 # test cases
 print(getTranslatedMessage("encrypt", "helloworld!", 1))
 print(getTranslatedMessage("decrypt", "ifmmpxpsme\"", 1))
-print(getTranslatedMessage("e", "hello", 1)) # as long as the first letter is d, it will decrypt, or else it will encrypt
+# as long as the first letter is d, it will decrypt, or else it will encrypt
+print(getTranslatedMessage("e", "hello", 1))
