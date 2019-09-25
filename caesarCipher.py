@@ -41,6 +41,7 @@ def getKey():
 print(getKey())
 
 
+
 def getTranslatedMessage(mode, message, key):  # parameter list
     if mode[0] == 'd':  # if first letter in mode variable is d grab part of string
         key = -key  # switch key for decryption
@@ -50,7 +51,6 @@ def getTranslatedMessage(mode, message, key):  # parameter list
         num = num + key
         translated += chr(num)
     return translated
-
 
 print(getTranslatedMessage("encrypt", "Hello", 1))
 print(getTranslatedMessage("decrypt", "Ifmmp", 1))
