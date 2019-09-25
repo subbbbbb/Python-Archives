@@ -3,7 +3,7 @@
 
 
 def getMode():  # defines the specific mode that you want
-    # converts single letters to lowercase to prevent problems later
+    # converts single letters to lowercase to preventp roblems later
     mode = input("do you want to encrypt or decrypt?").lower()
     # loop that is always true (as long as the user enters an input)
     while True:

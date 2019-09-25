@@ -10,7 +10,7 @@ sub = turtle.Turtle()
 sub.pencolor("black")
 sub.color("black")
 sub.pensize(4)
-sub.speed("fastest")
+sub.speed("slow")
 
 # Creates the house
 sub.penup()
