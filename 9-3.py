@@ -23,3 +23,6 @@ def regularpolygon(sides):
         print("This will be printed every time this is run")
 regularpolygon(3)
 regularpolygon(5)
+
+# Most important part of turtle is myScreen = turtle.Screen()
+# and sub = turtle.Turtle()

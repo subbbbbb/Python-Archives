@@ -17,7 +17,7 @@ sub.penup()
 sub.goto(-100, 0)
 sub.pendown()
 sub.goto(100, 0)
-sub.goto(100, 200)
+sub.goto(100, 200s
 sub.goto(-100, 200)
 sub.goto(-100, 0)
 sub.penup()

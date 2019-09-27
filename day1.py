@@ -1,4 +1,3 @@
-
 import random
 
 
@@ -10,7 +9,6 @@ print(3 ** 3) # 5 squared
 width = 20
 height = 5 * 9
 print(width * height)
-
 y = "yyyyyyyyyyyyyywwyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 for i in range(random.randint(0,5)):
     print("oh yeah yeah")
