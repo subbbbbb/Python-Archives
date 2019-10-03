@@ -1,7 +1,6 @@
 
 # getMode() is a getter method that either prints out decrypt/encrypt, or tells you to do it over again if invalid input
 
-
 def getMode():  # defines the specific mode that you want
     # converts single letters to lowercase to preventp roblems later
     mode = input("do you want to encrypt or decrypt?").lower()

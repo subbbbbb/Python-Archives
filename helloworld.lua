@@ -7,3 +7,5 @@ local ans = wx.wxMessageBox( "Should the application be started?", "Hi there!",
 if ans == wx.wxOK then
     wx.wxExecute( PATH_TO_APPLICATION )
 end
+
+print("The application has exited") -- this is what gets printed out
