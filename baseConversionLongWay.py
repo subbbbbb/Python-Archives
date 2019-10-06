@@ -11,5 +11,6 @@ while int(normalNumber) > 0:
 string = "" 
 for i in binaryNumber:
     string = i + string
+    
 
 print(string)
