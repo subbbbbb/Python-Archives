@@ -1,6 +1,6 @@
 def getKey():
     key = int(input("What is the key that you want to use to encrypt/decrypt?"))
-    while True:  # makes it so the program will loop until something correct is inputed
+    while True:  # autoloop in case wrong input
         if(key <= 25 and key >= -25):
             return key
         else:
