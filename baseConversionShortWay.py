@@ -9,5 +9,5 @@ elif(binOrDec == "decToHex"):
     wassup = int(input("Enter a decimal number"))
     print(hex(wassup).replace("0x", "").upper())
 elif(binOrDec == "binToHex"):
-    wassup = int(input("Enter a binary number"), 2)
+    wassupp = int(input("Enter a binary number"), 2)
     print(hex(wassup).replace("0x", "").upper())
