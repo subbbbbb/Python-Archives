@@ -19,3 +19,4 @@ print(answer)  # print the answer outside of the for loop
 # use .upper() or .lower() depending on the dictionary
 # make a new variable and then use the x[y] to convert
 # print the answer outside of the for loop
+# make sure to have the print statement outside
