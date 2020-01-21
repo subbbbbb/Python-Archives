@@ -8,7 +8,7 @@ maximum = 100
 guess = -1
 while guess != x:
     guess = int(input("Guess a number between " +
-                      str(minimum) + " and " + str(maximum)))
+    str(minimum) + " and " + str(maximum)))
     if int(guess) > 100 or int(guess) < 0:
         print("Pick a number within the specified range")
     elif int(guess) > x:
