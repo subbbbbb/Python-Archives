@@ -5,7 +5,6 @@ WIDTH = 480
 HEIGHT = 600
 FPS = 60
 
-# define colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
@@ -13,7 +12,6 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 
-# initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -42,11 +40,11 @@ class Player(pygame.sprite.Sprite):
             self.rect.right = WIDTH
         if self.rect.left < 0:
             self.rect.left = 0
-    
+
     def shoot(self):
         bullet = Bullet(self.rect.centerx, self.rect.top)
         all_sprites.add(bullet)
-        bullets.add()
+        bullets.add(bullet)
 
 class Mob(pygame.sprite.Sprite):
     def __init__(self):
@@ -67,7 +65,6 @@ class Mob(pygame.sprite.Sprite):
             self.rect.y = random.randrange(-100, -40)
             self.speedy = random.randrange(1, 8)
 
-
 class Bullet(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
@@ -80,10 +77,8 @@ class Bullet(pygame.sprite.Sprite):
 
     def update(self):
         self.rect.y += self.speedy
-        # kill if it moves off the top of the screen
         if self.rect.bottom < 0:
             self.kill()
-
 
 all_sprites = pygame.sprite.Group()
 mobs = pygame.sprite.Group()
@@ -102,33 +97,30 @@ while running:
     clock.tick(FPS)
     # Process input (events)
     for event in pygame.event.get():
-        # check for closing window
         if event.type == pygame.QUIT:
             running = False
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 player.shoot()
 
-    # Update
+  
     all_sprites.update()
 
-
-        
+    # bullet hits mob or not
     hits = pygame.sprite.groupcollide(mobs, bullets, True, True)
     for hit in hits:
         m = Mob()
         all_sprites.add(m)
         mobs.add(m)
 
-
+    # if mob hits player close the window
     hits = pygame.sprite.spritecollide(player, mobs, False)
     if hits:
         running = False
 
-    # Draw / render
+    # Draw the screen
     screen.fill(BLACK)
     all_sprites.draw(screen)
-    # *after* drawing everything, flip the display
     pygame.display.flip()
 
 pygame.quit()
