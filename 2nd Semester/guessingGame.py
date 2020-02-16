@@ -36,5 +36,5 @@ def run(): # the looping method that keeps the program running
         count+=1
         guess = userGuess(count)
         giveFeedback(guess, number, count)
-  
+print("Welcome to the guessing game! Try to guess the correct number in the least number of guesses possible!")  
 run()
