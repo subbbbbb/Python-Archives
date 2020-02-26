@@ -1,5 +1,4 @@
 import random 
-
 global minimum, maximum
 maximum = 100
 minimum = 1
@@ -27,7 +26,6 @@ def giveFeedback(guess, number, c): # the method that tells you whether your gue
         print('Just Right')
         print(c, "guesses")
     
-
 def run(): # the looping method that keeps the program running
     number = pickNumber()
     guess = -1
@@ -36,5 +34,5 @@ def run(): # the looping method that keeps the program running
         count+=1
         guess = userGuess(count)
         giveFeedback(guess, number, count)
-  
+print("Welcome to the guessing game! Try to guess the correct number in the least number of guesses possible!")  
 run()
