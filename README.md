@@ -1,2 +1,2 @@
-# All the coding projects done in APCSP
-This repo includes a variety of projects including turtle classes, for loops, while loops, the tests, and more.  
+# Python Work
+This repo includes a collection of a variety of my python projects, while learning and for assignments. I use many libraries like matplotlib, pygame, tkinter, and more.
