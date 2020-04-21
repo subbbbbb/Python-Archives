@@ -54,15 +54,15 @@ def lawOfSin():
         sideA = float(input("Enter the side measure for side A"))
         extra = float(input("Enter the measure for the extra angle or side"))
         angleA = math.radians(angleA)
-        print("The measure of the angle is " +
-              math.degrees(math.asin(math.sin(angleA) / sideA * extra)) + "degrees")
+        answer = (math.degrees(math.asin(math.sin(angleA) / sideA * extra)))
+        print("The measure of the angle is " + str(answer) + "degrees")
     elif (option == "b"):
         angleA = float(input("Enter the degree measure for angle A"))
         sideA = float(input("Enter the side measure for side A"))
         extra = float(input("Enter the measure for the extra angle or side"))
         angleA = math.radians(angleA)
-        print("The measure of the side is " + math.sin(math.radians(extra))
-              * sideA) / math.sin(angleA) + "units"
+        answer = (math.sin(math.radians(extra)) * sideA) / math.sin(angleA)
+        print("The measure of the side is " + str(answer) + " units")
     elif (option == "c"):
         print("Try the law of cosines calculator")
         lawOfCos()
@@ -80,26 +80,30 @@ def lawOfCos():
         sideC = float(input("Enter the side measure for side C"))
         x = math.sqrt(sideB ** 2 + sideC ** 2 - 2 * sideB *
                       sideC * math.cos(math.radians(angleA)))
-        print("The measure of side A is: " + math.sqrt(sideB ** 2 + sideC **
-                                                       2 - 2 * sideB * sideC * math.cos(math.radians(angleA))))
-        print("The measure of angle B is: " +
-              math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC))))
-        print("The measure of angle C is: " + 180 - angleA -
-              (math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC)))))
+        measureA = math.sqrt(sideB ** 2 + sideC **
+                             2 - 2 * sideB * sideC * math.cos(math.radians(angleA)))
+        degB = math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC)))
+        degC = 180 - angleA - (math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC))))
+        print("The measure of side A is: " + str(measureA))
+        print("The measure of angle B is: " + str(degB))
+        print("The measure of angle C is: " + str(degC))
 
     elif option == "b":
         sideA = float(input("Enter the side measure for side A"))
         sideB = float(input("Enter the side measure for side B"))
         sideC = float(input("Enter the side measure for side C"))
-        print("The measure of angle A is: " + math.degrees(math.acos((sideA **
-                                                                      2 - sideB ** 2 - sideC ** 2) / (
-                                                                             -2 * sideB * sideC))))
-        print("The measure of angle B is: " + math.degrees(math.acos((sideB **
-                                                                      2 - sideA ** 2 - sideC ** 2) / (
-                                                                             -2 * sideA * sideC))))
-        print("The measure of angle C is: " + (180 - (math.degrees(math.acos((sideA ** 2 - sideB ** 2 - sideC ** 2) /
-                                                                             (-2 * sideB * sideC)))) - (math.degrees(
-            math.acos((sideB ** 2 - sideA ** 2 - sideC ** 2) / (-2 * sideA * sideC))))))
+        measure1 = math.degrees(math.acos((sideA **
+                                           2 - sideB ** 2 - sideC ** 2) / (
+                                                  -2 * sideB * sideC)))
+        measure2 = math.degrees(math.acos((sideB **
+                                           2 - sideA ** 2 - sideC ** 2) / (
+                                                  -2 * sideA * sideC)))
+        measure3 = (180 - (math.degrees(math.acos((sideA ** 2 - sideB ** 2 - sideC ** 2) /
+                                                  (-2 * sideB * sideC)))) - (math.degrees(
+            math.acos((sideB ** 2 - sideA ** 2 - sideC ** 2) / (-2 * sideA * sideC)))))
+        print("The measure of angle A is: " + str(measure1))
+        print("The measure of angle B is: " + str(measure2))
+        print("The measure of angle C is: " + str(measure3))
     else:
         print("Enter a, b, or c")
         lawOfCos()
